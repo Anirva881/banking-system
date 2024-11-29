@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://cdn.vectorstock.com/i/500p/29/63/digital-banking-global-networking-cyber-security-vector-45822963.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .login-box{
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(rgb(54, 30, 189), green, blue, alpha);
+            text-align: center;
+            width: 300px;
+        }
+        .bank-logo{
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        h2{
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #5b0dd8; 
+        }
+        form input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px; 
+        }
+        form button{
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form button:hover{
+            background-color: #0056b3;
+        }
+        .forgot-signup{
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .forgot-signup a{
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .forgot-signup a:hover{
+            text-decoration: underline;
+        }
+        .forgot-signup span{
+            margin: 0 5px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="https://static.vecteezy.com/system/resources/previews/013/948/727/non_2x/bank-icon-logo-design-vector.jpg" alt="Bank Logo" class="bank-logo">
+            <h2>My Bank</h2>
+            <form action="#">
+                <input type="text" placeholder="Account number" required>
+                <input type="password" placeholder="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="forgot-signup">
+                <a href="#">Forgot password?</a> <span>Or</span> <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>

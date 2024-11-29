@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking Services</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url(https://media.istockphoto.com/id/531236924/photo/group-of-credit-cards-on-computer-keyboard.jpg?s=612x612&w=0&k=20&c=5iAuEH7ipVgVDI9TkgzTC8Xx0roMhvDlT79UzRiSzcE=);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+        .nav-left a,
+        .nav-right a{
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .nav-right{
+            margin-left: auto;
+        }
+        .container{
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1{
+            font-size: 36px;
+            color: white;
+            background-color: #007bff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .services{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .service-box{
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .service-box{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+        .summary-section{
+            margin-bottom: 20px;
+            display: flex;
+            display: flex;
+            align-items: center;
+            margin-left: 400px;
+            background: transparent;
+        }
+        .card{
+            border: 1px solid black;
+            margin-left: 100px;
+            color: black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Welcome user</h1>
+        <p>Online Banking Services</p>
+        <div>
+            <h2><span id="amountBalance">0</span></h2>
+        </div>
+        <div id="dErrorText"></div>
+        <div id="wErrorText"></div>
+        
+
+        <div class="services">
+            <div class="service-box">
+                <h2>Deposite</h2>
+                <input id="budgetInput" type="text" placeholder="Enter Your Amount"><br>
+                <input id="dpst1" type="text" placeholder="Enter Your Account Number"><br>
+                <button onclick="setBudget()">Deposite</button>
+            </div>
+            <div class="service-box">
+                <h2>withdraw</h2>
+                <input id="expenseDetails" type="text" placeholder="Enter Your Account Number"><br>
+                <input id="expenseAmount" type="text" placeholder="Enter Your Amount"><br>
+                <button onclick="addExpense()">Withdraw</button>
+            </div>
+        </div>
+        <div class="summary-section">
+            <div class="card">
+              <div id="totalBudget">$0</div>
+              <div class="box">Budget</div>
+            </div>
+            <div class="card">
+              <div id="totalExpense">$0</div>
+              <div class="box">Expense</div>
+            </div>
+            <div class="card">
+              <div id="balanceAmount">$0</div>
+              <div class="box">Balance</div>
+            </div>
+          </div>
+    </div>
+    <script src="./script3.js"></script>
+    <!-- <script>
+        loginedUser = JSON.parse(localStorage.getItem("logginedUser"));
+      greetingText.innerHTML = `Greetings ${logginedUser.name}`;
+
+      document.getElementById(
+        "amountBalance"
+      ).innerHTML = `${loginedUser.balance}`;
+    </script> -->
+</body>
+</html>

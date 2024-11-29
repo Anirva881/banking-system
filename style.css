@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #84a8eb;
+    position: sticky;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: auto;
+}
+.logo h1{
+    margin-left: 10px;
+    font-size: 24px;
+    color: #0056b3;
+}
+
+.auth-buttons{
+    display: flex;
+    align-items: center;
+}
+.auth-buttons button{
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: 1px solid #0056b3;
+    background-color: transparent;
+    color: #0056b3;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.auth-buttons button:hover{
+    background-color: #0056b3;
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+.intro{
+    position: absolute;
+  top: 60%; /* Center the text vertically */
+  left: 30%; /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning */
+  color: white; /* Text color */
+  font-size: 24px; /* Text size */
+  font-weight: bold; /* Text style */
+  /* background-color: rgba(0, 0, 0, 0.5); Optional: semi-transparent background */
+  padding: 10px; /* Optional: padding around the text */
+  text-align: center;
+    width: 50%;
+    text-align: center;
+    
+}
+.intro h2{
+    font-size: 66px;
+    color: rgb(104, 71, 224);
+    text-shadow: 0px 0px 10px cyan,
+                 0px 0px 20px cyan,
+                 0px 0px 40px cyan,
+                 0px 0px 80px cyan;
+
+    margin-bottom: 20px;
+
+}
+.intro p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black;
+
+}
+.get-started{
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.get-started:hover{
+    background-color: #004494;
+}
+.illustration{
+    padding-top:0px;
+    width: 100%;
+}
+.illustration img{
+    width: 100%;
+    height: auto;
+}
+.para{
+    text-align: center;
+    padding-top: 20px;
+}
+.para h2{
+    color: #004494;
+    text-shadow: 0px 0px 10px cyan,
+                 0px 0px 20px cyan,
+                 0px 0px 40px cyan,
+                 0px 0px 80px cyan;
+
+    font-size: 40px;
+}
+.para p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.para1{
+    text-align: center;
+    padding-top: 280px;
+}
+.para1 h2{
+    color: #275181;
+    text-shadow: 0px 0px 10px cyan,
+                 0px 0px 20px cyan,
+                 0px 0px 40px cyan,
+                 0px 0px 80px cyan;
+
+    font-size: 40px;
+}
+.para1 p{
+    padding-top: 20px;
+    font-size: 20px;
+}
